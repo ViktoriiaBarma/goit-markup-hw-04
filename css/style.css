@@ -4,6 +4,7 @@
     --headers-color:#2E2F42;
     --text-color: #434455;
     --back-color: #fff;
+    --light-bg: #F4F4FD;
 }
 /*general qualities*/
 body{
@@ -166,6 +167,9 @@ a{
 
 /*Hero section*/
 .hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/page1/people-office.jpg);
+    background-position: center;
+    background-size: cover;
     background-color: var(--headers-color,grey);
     padding-bottom: 188px;
     padding-top: 188px;
@@ -214,7 +218,7 @@ a{
 
 /*Our Team Section*/
 .team{
-   background-color:  #F4F4FD;
+   background-color: var(--light-bg);
 }
 
 .content{
@@ -236,7 +240,7 @@ a{
 
 
 .bottom {
-    color: #F4F4FD;
+    color:var(--light-bg);
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -264,7 +268,7 @@ a{
 .section-btn .btn {
     padding: 12px 24px;
     color: var(--brand-color, purple);
-    background-color: #F4F4FD;       
+    background-color:var(--light-bg);       
     font-weight: 500; 
     line-height: 1.5; 
     text-align: center;
