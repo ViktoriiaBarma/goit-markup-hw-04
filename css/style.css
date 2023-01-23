@@ -5,6 +5,7 @@
     --text-color: #434455;
     --back-color: #fff;
     --light-bg: #F4F4FD;
+    --action-color: #404BBF;
 }
 /*general qualities*/
 body{
@@ -52,9 +53,6 @@ img {
 
 .list-item:not(:last-child){
     margin-right: 24px;
-}
-.desc{
-    width: 264px;
 }
 
 .section-title {
@@ -173,6 +171,8 @@ a{
     background-color: var(--headers-color,grey);
     padding-bottom: 188px;
     padding-top: 188px;
+    width: 1440px;
+    height: 600px;
 }
 
 .hero-title{
@@ -202,7 +202,7 @@ a{
 }
 
 .order:hover, .order:focus {
-    background-color: #404BBF;
+    background-color: var(--action-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -214,12 +214,78 @@ a{
 }
 /*Quality section*/
 
+.quality-list .list-item::before {
+    display: block;
+    margin-bottom: 8px;
+
+    content: '';
+    width: 264px;
+    height: 112px;
+    background-color: var(--light-bg);
+    border-radius: 4px;
+}
+
+.icon-antenna::before {
+    background-image: url('../images/page1/antenna.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-clock::before {
+    background-image: url('../images/page1/clock.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-diagram::before {
+    background-image: url('../images/page1/diagram.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-astronaut::before {
+    background-image: url('../images/page1/astronaut.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*What are we doing section*/
+
+.work-list .list-item{
+    border: 1px solid #E7E9FC;
+}
 
 /*Our Team Section*/
 .team{
    background-color: var(--light-bg);
 }
+
+.team-list .section-text{
+    margin-bottom: 8px;
+}
+
+.icon-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.team-link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: var(--brand-color);   
+}
+
+.team-link:hover{
+    background-color: var(--action-color);
+}
+
+
 
 .content{
     padding: 32px 16px;
@@ -229,6 +295,45 @@ a{
 .box{
     width: 264px;
     background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+/* Customers-section*/
+
+.customers-list{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customers-link{
+    fill: #8E8F99;
+}
+
+.customers-link:hover{
+    fill: var(--brand-color);
+}
+
+.customers-list .list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.customers-list .list-item:hover{
+    border: 1px solid var(--brand-color);
+    border-radius: 4px;
+}
+
+.customers-icon{
+        fill: #8E8F99;
 }
 
 /*Футер*/
@@ -257,6 +362,45 @@ a{
     letter-spacing: 0.02em;
 
 }
+
+.case{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.up{
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.light-title{
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover{
+    background-color: #31D0AA;
+}
 /*2 стр*/
 /*Фільтр*/
 .section-btn{
@@ -280,7 +424,7 @@ a{
 
 .section-btn .btn:hover, .btn:focus {
     color: #FFFFFF;
-    background-color: #404BBF;
+    background-color: var(--action-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
