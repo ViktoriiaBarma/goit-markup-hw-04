@@ -173,6 +173,7 @@ a{
     padding-top: 188px;
     width: 1440px;
     height: 600px;
+    margin: auto;
 }
 
 .hero-title{
@@ -336,7 +337,7 @@ a{
         fill: #8E8F99;
 }
 
-/*Футер*/
+/*Footer-section*/
 .footer {
     background-color: var(--headers-color,grey);
     padding-top: 100px;
@@ -381,7 +382,7 @@ a{
     flex-direction: column;
 }
 
-.light-title{
+.socialmedia .section-sub-title{
     color: #fff;
     margin-bottom: 16px;
 }
@@ -401,8 +402,12 @@ a{
 .footer-link:hover{
     background-color: #31D0AA;
 }
+
+
+
+
 /*2 стр*/
-/*Фільтр*/
+/*Filter*/
 .section-btn{
     margin-bottom: 72px;
     padding-left: 0;
@@ -429,6 +434,8 @@ a{
     border-radius: 4px;
 }
 
+
+/*Portfolio*/
 .project-list{
     display: flex;
     flex-wrap: wrap;
@@ -440,6 +447,13 @@ a{
 
 .item{
     border: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.item:hover{
+    cursor: pointer;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .item:nth-child(3n){
